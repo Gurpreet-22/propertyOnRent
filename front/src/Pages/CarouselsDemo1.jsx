@@ -19,7 +19,7 @@ const CarouselsDemo1 = () => {
     const fetchPgDetails=async()=>{
       try{
         
-        const response= await axios.get(`http://localhost:8000/api/pgData/${cityid}`)
+        const response= await axios.get(`https://propertyonrent-backend.onrender.com/api/pgData/${cityid}`)
   
           setPgDetail(response.data.data);
           console.log(response.data.data);
