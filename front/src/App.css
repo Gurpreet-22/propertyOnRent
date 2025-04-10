@@ -1,0 +1,249 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* .body{
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000; 
+} */
+
+
+.frame {
+
+  position: relative;
+  background:black; 
+overflow:hidden;
+height:100vh;
+width:100vw
+}
+.eclipse{
+  position: absolute;
+  width: 00px;
+  height: 200px;
+  top: 20%; /* Position the eclipse at the top */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%);
+  background: linear-gradient(to bottom , rgb(227, 74, 237), navy); 
+  border-radius: 50%; /* Circular shape */
+  /* box-shadow: 0 0 30px rgba(255, 105, 180, 0.5);  */ 
+  opacity: 30%;
+            
+}
+.eclipse-contact{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 20%; /* Position the eclipse at the top */
+  left: 30%; /* Center horizontally */
+  transform: translate(-50%, -50%);
+  background: linear-gradient(to bottom , rgb(227, 74, 237), navy); 
+  border-radius: 50%; /* Circular shape */
+  /* box-shadow: 0 0 30px rgba(255, 105, 180, 0.5);  */ 
+  opacity: 30%;
+            
+}
+/* .label{
+position: relative;
+} */
+.Login-Box
+{
+position: absolute;
+width: 400px;
+padding: 20px;
+top: 5%; /* Position near the bottom of the frame */
+left: 65%;
+transform: translateX(-50%);
+ /* background: rgba(255, 254, 254, 0.8); */
+border-radius: 10px;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.50);
+font-family: Arial, sans-serif;
+border: 1px solid white;
+opacity: 100%;
+
+
+}
+.Register-Box
+{
+position: absolute;
+width: 600px;
+
+top:5%;
+
+
+transform: translateX(-50%);
+  /* background: rgba(255, 254, 254, 0.8);  */
+border-radius: 10px;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.50);
+font-family: Arial, sans-serif;
+border: 1px solid white;
+opacity: 100%;
+}
+
+
+.Contact-Box
+{
+position: absolute;
+width: 400px;
+padding: 20px;
+top: 10%; /* Position near the bottom of the frame */
+left: 50%;
+transform: translateX(-50%);
+ /* background: rgba(255, 254, 254, 0.8); */
+border-radius: 10px;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.50);
+font-family: Arial, sans-serif;
+border: 1px solid white;
+opacity: 100%;
+}
+.Profile-Box
+{
+position: absolute;
+width: 500px;
+padding: 20px;
+top: 20%; /* Position near the bottom of the frame */
+left: 50%;
+transform: translateX(-50%);
+ /* background: rgba(255, 254, 254, 0.8); */
+border-radius: 10px;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.50);
+font-family: Arial, sans-serif;
+border: 1px solid white;
+opacity: 100%;
+}
+.Profile-Box:hover {
+
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+  transform: translateX(-50%) scale(1.05)
+}
+.Contact-Box:hover {
+
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+  transform: translateX(-50%) scale(1.05)
+}
+  
+
+.eclipse2{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 110%; /* Position the eclipse at the top */
+  left: 90%; /* Center horizontally */
+  transform: translate(-50%, -50%);
+  background: linear-gradient(to bottom , rgb(227, 74, 237,0.8), black); 
+  border-radius: 50%; /* Circular shape */
+  /* box-shadow: 0 0 30px rgba(255, 105, 180, 0.5);  */ 
+  opacity: 45%;
+            
+}
+.eclipse2-contact{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 150%; /* Position the eclipse at the top */
+  left: 150%; /* Center horizontally */
+  transform: translate(-50%, -50%);
+  background: linear-gradient(to bottom , rgb(227, 74, 237,0.8), black); 
+  border-radius: 50%; /* Circular shape */
+  /* box-shadow: 0 0 30px rgba(255, 105, 180, 0.5);  */ 
+  opacity: 45%;
+            
+}
+.eclipse-profile{
+  position: absolute;
+  width: 300%;
+  height: 100px;
+  top:5%; 
+  transform: translate(-50%, -50%);
+  background: linear-gradient(to bottom , rgb(227, 74, 237), navy); 
+  
+  opacity: 30%;
+  animation: wave 3s infinite ease-in-out;
+            
+}
+
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+
+/* Style the previous and next buttons */
+.swiper-button-next, .swiper-button-prev {
+  /* Change the color */
+  /* height: 2px; Set the height of the buttons */
+  width: 50px; /* Optional: Set the width for consistency */
+  display: flex; /* Make the buttons a flex container */
+  justify-content: center; /* Center icon horizontally */
+  align-items: center; /* Center icon vertically */
+}
+
+/* Center the buttons vertically */
+.swiper-button-next, .swiper-button-prev {
+  top: 50%; /* Position at the vertical center */
+  transform: translateY(-50%); /* Adjust for centering */
+  font-size: 1px;
+}
+
+/* Optional: Increase the size of the icon inside
+.swiper-button-next::after, .swiper-button-prev::after {
+  font-size: 2px; 
+} */
