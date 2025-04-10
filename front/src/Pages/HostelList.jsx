@@ -34,7 +34,7 @@ navigate("/Login")
     const fetchPgDetails = async () => {
       // let cityid=1;
       try {
-        const response = await axios.post("http://localhost:8000/api/pgDataInfo",{city_id});
+        const response = await axios.post("https://propertyonrent-backend.onrender.com/api/pgDataInfo",{city_id});
         setPgDetail(response.data.data);
         console.log(response.data.data);
         console.log(pgDetail);
