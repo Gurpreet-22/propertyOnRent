@@ -23,7 +23,7 @@ const RoomsDetail = () => {
     const fetchRoomDetails = async () => {
      
       try {
-        const response = await axios.post("http://localhost:8000/api/roomdataInfo",{hostel_id});
+        const response = await axios.post("https://propertyonrent-backend.onrender.com/api/roomdataInfo",{hostel_id});
         setSlidesData(response.data.data);
         console.log(response.data.data)
         console.log(slidesData)
