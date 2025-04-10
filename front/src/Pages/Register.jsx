@@ -137,7 +137,7 @@ const validPin=/^[1-9][0-9]{5}$/
        if (validation()) {
         try {
           await 
-            axios.post("http://localhost:8000/api/register",details).then((res) => {  
+            axios.post("https://propertyonrent-backend.onrender.com/api/register",details).then((res) => {  
             if (res.status === 200) {
              
             localStorage.setItem('details',JSON.stringify(details))
