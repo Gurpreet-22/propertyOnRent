@@ -25,7 +25,7 @@ const MyCart = () => {
 
   const fetchCartData = async (user_id) => {
     try {
-      const res = await axios.post("http://localhost:8000/api/hostelT_info", {
+      const res = await axios.post("https://propertyonrent-backend.onrender.com/api/hostelT_info", {
         user_id,
       });
       if (res.status === 200) {
