@@ -76,7 +76,7 @@ else if(!validpass.test(details.password)){
     if (validation()) {
       try {
         
-        await axios.post("http://localhost:8000/api/registerData",details).then((res) => {
+        await axios.post("https://propertyonrent-backend.onrender.com/registerData",details).then((res) => {
           if (res.status === 200) {
           if(res.data.data.length>0 ){
         
