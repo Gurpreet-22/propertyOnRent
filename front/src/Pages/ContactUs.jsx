@@ -72,7 +72,7 @@ else if(details.name.length<3){
     
       try {
         
-        await axios.post("http://localhost:8000/api/leads",details).then((res) => {
+        await axios.post("https://propertyonrent-backend.onrender.com/api/leads",details).then((res) => {
           if (res.status === 200) {
            alert("message sent successfully");
 
